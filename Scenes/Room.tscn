@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cssgvouenixyg"]
+
+[node name="Room" type="Node3D"]
+
+[node name="Floor" type="CSGBox3D" parent="."]
+size = Vector3(12, 1, 12)
+
+[node name="Wall2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.92684, 1.78782, -0.00149143)
+size = Vector3(0.13623, 2.55121, 12)
+
+[node name="Wall3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9179, 1.78515, 0.00846875)
+size = Vector3(0.13623, 2.54587, 12)
+
+[node name="Wall4" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.00330675, 1.78415, 5.93648)
+size = Vector3(0.13623, 2.54385, 11.6974)
+
+[node name="Wall5" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.000812173, 1.78276, -5.9351)
+size = Vector3(0.13623, 2.54108, 11.9702)
+
+[node name="Ceiling" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00178194, 2.88394, -0.0108948)
+size = Vector3(11.7181, 0.378662, 11.7154)
+
+[node name="Room light" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.935813, -0.178956, -0.303693, -0.332448, 0.73449, 0.59161, 0.117188, 0.654598, -0.746839, -1.57282, 2.3662, 1.09257)
+
+[node name="Room light2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.654635, 0.631274, -0.415869, -0.332448, 0.73449, 0.59161, 0.678919, -0.249033, 0.690689, -1.57282, 2.3662, -0.693298)
