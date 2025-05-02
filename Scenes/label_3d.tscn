@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cxsmesd174aan"]
+
+[node name="Label3D" type="Label3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0119476, 0, 0)
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 164.0
+offset_bottom = 122.0
+text = "Have this text here???"
