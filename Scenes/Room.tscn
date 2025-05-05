@@ -1,32 +1,50 @@
-[gd_scene format=3 uid="uid://cssgvouenixyg"]
+[gd_scene load_steps=3 format=3 uid="uid://cssgvouenixyg"]
+
+[ext_resource type="Material" uid="uid://d1ubab840cag0" path="res://Colors/Green.tres" id="1_nn86p"]
+[ext_resource type="Material" uid="uid://boet6d6284a0i" path="res://Colors/Red.tres" id="2_uj218"]
 
 [node name="Room" type="Node3D"]
 
 [node name="Floor" type="CSGBox3D" parent="."]
+use_collision = true
 size = Vector3(12, 1, 12)
+material = ExtResource("1_nn86p")
 
 [node name="Wall2" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.92684, 1.78782, -0.00149143)
+material_override = ExtResource("1_nn86p")
+use_collision = true
 size = Vector3(0.13623, 2.55121, 12)
 
 [node name="Wall3" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9179, 1.78515, 0.00846875)
+use_collision = true
 size = Vector3(0.13623, 2.54587, 12)
+material = ExtResource("2_uj218")
 
 [node name="Wall4" type="CSGBox3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.00330675, 1.78415, 5.93648)
+material_override = ExtResource("1_nn86p")
+use_collision = true
 size = Vector3(0.13623, 2.54385, 11.6974)
 
 [node name="Wall5" type="CSGBox3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.000812173, 1.78276, -5.9351)
+material_override = ExtResource("1_nn86p")
+use_collision = true
 size = Vector3(0.13623, 2.54108, 11.9702)
 
 [node name="Ceiling" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00178194, 2.88394, -0.0108948)
+material_override = ExtResource("1_nn86p")
+use_collision = true
 size = Vector3(11.7181, 0.378662, 11.7154)
 
 [node name="Room light" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.935813, -0.178956, -0.303693, -0.332448, 0.73449, 0.59161, 0.117188, 0.654598, -0.746839, -1.57282, 2.3662, 1.09257)
+transform = Transform3D(-0.988954, 0.145645, -0.0275222, 0.0979618, 0.781591, 0.616051, 0.111236, 0.60655, -0.787225, -1.57282, 2.3662, 1.09257)
 
 [node name="Room light2" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.654635, 0.631274, -0.415869, -0.332448, 0.73449, 0.59161, 0.678919, -0.249033, 0.690689, -1.57282, 2.3662, -0.693298)
+transform = Transform3D(-0.269055, 0.790892, 0.549634, -0.683139, -0.558991, 0.469948, 0.678919, -0.249034, 0.690689, -1.57282, 2.3662, -0.693298)
+
+[node name="Room light3" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.654635, 0.631273, -0.415869, -0.753305, 0.498827, -0.428606, -0.0631206, 0.593857, 0.802091, -1.57282, 2.3662, 0.213952)
