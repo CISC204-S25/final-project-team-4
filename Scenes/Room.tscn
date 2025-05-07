@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cssgvouenixyg"]
+[gd_scene load_steps=4 format=3 uid="uid://cssgvouenixyg"]
 
 [ext_resource type="Material" uid="uid://d1ubab840cag0" path="res://Colors/Green.tres" id="1_nn86p"]
 [ext_resource type="Material" uid="uid://boet6d6284a0i" path="res://Colors/Red.tres" id="2_uj218"]
+[ext_resource type="PackedScene" uid="uid://bjq7yuwevi4n6" path="res://Scenes/player.tscn" id="3_uj218"]
 
 [node name="Room" type="Node3D"]
 
@@ -48,3 +49,6 @@ transform = Transform3D(-0.269055, 0.790892, 0.549634, -0.683139, -0.558991, 0.4
 
 [node name="Room light3" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.654635, 0.631273, -0.415869, -0.753305, 0.498827, -0.428606, -0.0631206, 0.593857, 0.802091, -1.57282, 2.3662, 0.213952)
+
+[node name="Player" parent="." instance=ExtResource("3_uj218")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36366, 0)
