@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxsmesd174aan"]
+
+[ext_resource type="Script" uid="uid://4jf2ju0iepj5" path="res://Scripts/label_3d.gd" id="1_yvhyi"]
+[ext_resource type="FontFile" uid="uid://bw1lhhwvon7ty" path="res://Fonts/Orange Kid.otf" id="2_xxpqr"]
+
+[node name="TypingBox" type="Node3D"]
+script = ExtResource("1_yvhyi")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0116575)
+text = "Display text
+This will be used
+Now just needs implementation"
+font = ExtResource("2_xxpqr")
+autowrap_mode = 3
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 18.0
+offset_top = 234.0
+offset_right = 359.0
+offset_bottom = 397.0
+theme_override_font_sizes/font_size = 32
+alignment = 1
+keep_editing_on_text_submit = true
+emoji_menu_enabled = false
+deselect_on_focus_loss_enabled = false
