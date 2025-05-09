@@ -7,10 +7,5 @@ func _ready():
 	line_edit.text_submitted.connect(_on_LineEdit_text_entered)
 
 
-
-
-
-
 func _on_LineEdit_text_entered (new_text: String):
-	SignalBus.checkCode.emit(new_text)
 	label.text = "Your name is " + new_text

@@ -12,7 +12,7 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("Move Left", "Move Right", "Move Forward", "Move Back")
-	var direction: Vector3 = ($Camera3D.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var direction: Vector3 = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
@@ -21,33 +21,14 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 
-
-
-
-
-
-
-
-
-
-
-
+	if Input.is_action_pressed("Camera Left"):
+		rotation.y += .05
+	if Input.is_action_pressed("Camera Right"):
+		rotation.y -= .05
+	if Input.is_action_pressed("Camera Up"):
+		$Camera3D.rotate_x(.04)
+	if Input.is_action_pressed("Camera Down"):
+		$Camera3D.rotate_x(-.04)
 
 
 	move_and_slide()
-
-#THIS SHIT SUCKS, WHY IS IT SO HARD TO MAKE A 3D CAMERA RAHHHHHHHHHHHHHHHHH
-#func _input(event):
-	#if event is InputEventJoypadMotion:
-		#rotation.y -= event.relative.x * CAMERA_SENS
-		#rotation.x -= event.relative.x * CAMERA_SENS
-
-
-	if Input.is_action_pressed("Camera Left"):
-		$Camera3D.rotate_y(.05)
-	if Input.is_action_pressed("Camera Right"):
-		$Camera3D.rotate_y(-.05)
-	#if Input.is_action_pressed("Camera Up"):
-		#$Camera3D.rotate_x(.05)
-	#if Input.is_action_pressed("Camera Down"):
-		#$Camera3D.rotate_x(-.05)
