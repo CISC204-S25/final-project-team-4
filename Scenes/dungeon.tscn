@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxxtlko4i3fn1"]
+[gd_scene load_steps=4 format=3 uid="uid://bxxtlko4i3fn1"]
 
 [ext_resource type="Material" uid="uid://boet6d6284a0i" path="res://Colors/Red.tres" id="1_7e67s"]
 [ext_resource type="Material" uid="uid://ccqib1y105wcf" path="res://Colors/Gray.tres" id="1_dakn4"]
+[ext_resource type="PackedScene" uid="uid://bjq7yuwevi4n6" path="res://Scenes/player.tscn" id="3_lt7kh"]
 
 [node name="Dungeon" type="Node3D"]
 
@@ -261,3 +262,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36657, 0.981212, 41.9889)
 material_override = ExtResource("1_dakn4")
 use_collision = true
 size = Vector3(0.265137, 1, 8.98602)
+
+[node name="Player" parent="." instance=ExtResource("3_lt7kh")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.964505, 0)
