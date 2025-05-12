@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://bxxtlko4i3fn1"]
+[gd_scene load_steps=8 format=3 uid="uid://bxxtlko4i3fn1"]
 
 [ext_resource type="Material" uid="uid://boet6d6284a0i" path="res://Colors/Red.tres" id="1_7e67s"]
 [ext_resource type="Material" uid="uid://ccqib1y105wcf" path="res://Colors/Gray.tres" id="1_dakn4"]
 [ext_resource type="Script" uid="uid://bvpm5g41um0i7" path="res://Scripts/main.gd" id="1_l3tba"]
+[ext_resource type="Texture2D" uid="uid://6ersnatt3eg6" path="res://Textures/patterned_cobblestone_diff_1k.jpg" id="2_5v1xs"]
 [ext_resource type="PackedScene" uid="uid://bjq7yuwevi4n6" path="res://Scenes/player.tscn" id="3_lt7kh"]
 [ext_resource type="PackedScene" uid="uid://cxsmesd174aan" path="res://Scenes/TypingBox.tscn" id="5_iqbxe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dcl0p"]
+albedo_texture = ExtResource("2_5v1xs")
 
 [node name="Dungeon" type="Node3D"]
 script = ExtResource("1_l3tba")
@@ -13,6 +17,7 @@ script = ExtResource("1_l3tba")
 
 [node name="Floor" type="CSGBox3D" parent="Environment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
+material_override = SubResource("StandardMaterial3D_dcl0p")
 use_collision = true
 size = Vector3(7, 1, 8)
 
