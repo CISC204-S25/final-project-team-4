@@ -2,7 +2,7 @@ extends Node3D
 
 
 
-var correct_words = ["FirstWord", "SecondWord", "ThirdWord"]
+var correct_words = ["Extraction", "Literacy", "Chicken"]
 var current_level = 0
 
 
@@ -20,6 +20,7 @@ func check_code(text):
 	for i in range(current_level, 3, 1):
 		if text == correct_words[i]:
 			print("Correct!")
+			remove_wall(current_level)
 			current_level += 1
 			return
 		else:
@@ -27,3 +28,15 @@ func check_code(text):
 				return
 			else:
 				index += 1
+
+func remove_wall(level):
+	if level == 0:
+		print(level)
+		$Environment/DisappearingWall1.position.y = 2.104
+	if level == 1:
+		print(level)
+		$Environment/DisappearingWall2.position.y = 2.104
+	if level == 2:
+		print(level)
+		$Environment/DisappearingWall3.position.y = 2.104
+	
