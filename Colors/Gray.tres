@@ -1,9 +1,4 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ccqib1y105wcf"]
-
-[ext_resource type="Texture2D" uid="uid://wa78xrhxbjdr" path="res://Textures/patterned_cobblestone_diff_1k.jpg" id="1_0cp7j"]
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ccqib1y105wcf"]
 
 [resource]
-albedo_color = Color(0.237117, 0.164603, 0.133991, 1)
-albedo_texture = ExtResource("1_0cp7j")
-albedo_texture_force_srgb = true
-albedo_texture_msdf = true
+albedo_color = Color(0.159823, 0.191689, 0.186217, 1)
