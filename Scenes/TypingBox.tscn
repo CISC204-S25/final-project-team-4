@@ -8,9 +8,9 @@ script = ExtResource("1_yvhyi")
 
 [node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0116575)
-text = "Display text
-This will be used
-Now just needs implementation"
+text = "Find the clues,
+Type in the correct answer
+Assume the first letter is capitalized"
 font = ExtResource("2_xxpqr")
 autowrap_mode = 3
 
