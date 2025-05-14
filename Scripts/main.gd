@@ -2,7 +2,7 @@ extends Node3D
 
 
 
-var correct_words = ["Extraction", "Literacy", "Chicken"]
+var correct_words = ["Gold", "Cavern", "Chicken"]
 var current_level = 0
 
 
