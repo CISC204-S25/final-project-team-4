@@ -13,4 +13,4 @@ func _ready():
 
 func _on_LineEdit_text_entered (new_text: String):
 	SignalBus.checkCode.emit(new_text)
-	label.text = "Your name is " + new_text
+	
