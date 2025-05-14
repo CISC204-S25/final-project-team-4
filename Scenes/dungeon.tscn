@@ -448,7 +448,7 @@ use_collision = true
 size = Vector3(0.213867, 1, 2.10742)
 
 [node name="Player" parent="." instance=ExtResource("3_lt7kh")]
-transform = Transform3D(0.48, 0, 0, 0, 0.48, 0, 0, 0, 0.48, 0, 0.964505, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.650425, 0)
 
 [node name="TypingBox" parent="." instance=ExtResource("5_iqbxe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0759676, 1.01376, -4.29291)
