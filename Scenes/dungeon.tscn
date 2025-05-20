@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://bxxtlko4i3fn1"]
+[gd_scene load_steps=54 format=3 uid="uid://bxxtlko4i3fn1"]
 
 [ext_resource type="Material" uid="uid://ccqib1y105wcf" path="res://Colors/Gray.tres" id="1_dakn4"]
 [ext_resource type="Script" uid="uid://bvpm5g41um0i7" path="res://Scripts/main.gd" id="1_l3tba"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://pkuvcs5bwgu1" path="res://Textures/rock_wall_13_diff_2k.jpg" id="3_uvhx7"]
 [ext_resource type="Texture2D" uid="uid://dyx62b05osq1x" path="res://Art/golden_chicken.png" id="5_dcl0p"]
 [ext_resource type="PackedScene" uid="uid://cxsmesd174aan" path="res://Scenes/TypingBox.tscn" id="5_iqbxe"]
+[ext_resource type="AudioStream" uid="uid://beu5y3itskn3j" path="res://SFX/chicken wiseau.wav" id="8_203el"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dcl0p"]
 albedo_texture = ExtResource("2_5v1xs")
@@ -318,17 +319,42 @@ material_override = SubResource("StandardMaterial3D_ukeut")
 use_collision = true
 size = Vector3(0.213867, 1, 8)
 
+[node name="Decal" type="Decal" parent="Environment/Wall21"]
+transform = Transform3D(0.0513103, 0.316527, -0.186549, -0.000544861, -0.188293, -0.319637, -0.367409, 0.0444836, -0.0255783, -0.129834, -0.0673535, 0.34494)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
+
+[node name="Decal2" type="Decal" parent="Environment/Wall21"]
+transform = Transform3D(0.0513103, 0.316527, -0.186549, -0.000544861, -0.188293, -0.319637, -0.367409, 0.0444836, -0.0255783, -0.129834, -0.0673535, 1.93543)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
+
+[node name="Decal3" type="Decal" parent="Environment/Wall21"]
+transform = Transform3D(0.0513103, 0.316527, -0.186549, -0.000544861, -0.188293, -0.319637, -0.367409, 0.0444836, -0.0255783, -0.129834, -0.0673535, -1.59239)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
+
 [node name="Wall22" type="CSGBox3D" parent="Environment"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.25737, 1, 46.5976)
 material_override = SubResource("StandardMaterial3D_ch0un")
 use_collision = true
 size = Vector3(0.213867, 1, 2.0705)
 
+[node name="Decal" type="Decal" parent="Environment/Wall22"]
+transform = Transform3D(0.0513103, 0.316527, -0.186549, -0.000544861, -0.188293, -0.319637, -0.367409, 0.0444836, -0.0255783, -0.185753, 0.0488458, -0.12121)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
+
 [node name="Wall23" type="CSGBox3D" parent="Environment"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.24694, 1, 46.5976)
 material_override = SubResource("StandardMaterial3D_cl2uv")
 use_collision = true
 size = Vector3(0.213867, 1, 2.0705)
+
+[node name="Decal" type="Decal" parent="Environment/Wall23"]
+transform = Transform3D(0.0513103, 0.316527, -0.186549, -0.000544861, -0.188293, -0.319637, -0.367409, 0.0444836, -0.0255783, 0.0620117, 0.00524867, -0.0738428)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
 
 [node name="Wall24" type="CSGBox3D" parent="Environment"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.00297499, 1, 54.3905)
@@ -362,6 +388,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.39214, 1, 50.4969)
 material_override = SubResource("StandardMaterial3D_l4nxx")
 use_collision = true
 size = Vector3(0.213867, 1, 8)
+
+[node name="Decal" type="Decal" parent="Environment/Wall25"]
+transform = Transform3D(0.0479668, 0.363424, -0.0569636, 0.0182272, -0.0597228, -0.365682, -0.367409, 0.0444836, -0.0255783, -0.129834, -0.00328267, 1.52907)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
+
+[node name="Decal2" type="Decal" parent="Environment/Wall25"]
+transform = Transform3D(0.0479668, 0.363424, -0.0569636, 0.0182272, -0.0597228, -0.365682, -0.367409, 0.0444836, -0.0255783, -0.129834, -0.00328267, 3.11956)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
+
+[node name="Decal3" type="Decal" parent="Environment/Wall25"]
+transform = Transform3D(0.0479668, 0.363424, -0.0569636, 0.0182272, -0.0597228, -0.365682, -0.367409, 0.0444836, -0.0255783, -0.129834, -0.00328267, -0.40826)
+size = Vector3(2, 1.74268, 2)
+texture_albedo = ExtResource("5_dcl0p")
 
 [node name="HW Floor4" type="CSGBox3D" parent="Environment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 41.9959)
@@ -475,59 +516,87 @@ transform = Transform3D(1, 0, 0, 0, -0.614258, 0.789106, 0, -0.789106, -0.614258
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.814743, -0.579822, 0, 0.579822, 0.814743, 0, 1.40164, 0)
 
-[node name="Room one code" type="Label3D" parent="."]
+[node name="Room Two Codes" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.58719, 0.967518, 12.7715)
+
+[node name="Label3D3" type="Label3D" parent="Room Two Codes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.852453, 0, 0)
+text = "-                                 8
+ -            4
+ _                                     24"
+horizontal_alignment = 0
+
+[node name="Label3D" type="Label3D" parent="Room Two Codes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.22364, 0.0546221, -0.045948)
+text = "2                                           -
+5                    -
+23                          "
+horizontal_alignment = 2
+
+[node name="Room One Codes" type="Node3D" parent="."]
 transform = Transform3D(-0.0012741, 0, -0.999999, 0, 1, 0, 0.999999, 0, -0.0012741, 3.26688, 0.971947, -1.11726)
-text = "12
 
-		                 16
-
----------------------------"
+[node name="Clue_12" type="Label3D" parent="Room One Codes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374638, 0.153349, -0.00689173)
+text = "12"
 font_size = 28
 
-[node name="Label3D" type="Label3D" parent="Room one code"]
+[node name="Clue_16" type="Label3D" parent="Room One Codes"]
+transform = Transform3D(1, 0, -1.16415e-10, 0, 1, 0, 1.16415e-10, 0, 1, 0.238139, -0.179318, -0.00547409)
+text = "16"
+font_size = 28
+
+[node name="Label3D" type="Label3D" parent="Room One Codes"]
 transform = Transform3D(-0.00523594, -0.999987, 4.37108e-08, 0, -4.37114e-08, -1, 0.999988, -0.00523594, 2.2887e-10, -0.318018, 0.529239, 5.88985)
 visible = false
 text = "---------------------2
 5---------------------
 ------------8"
 
-[node name="Label3D2" type="Label3D" parent="Room one code"]
-transform = Transform3D(-0.999981, 0.00349074, -0.00523592, -0.00523592, 9.13872e-06, 0.999987, 0.00349074, 0.999994, 9.13872e-06, 3.54348, -0.466401, 5.84122)
-text = "
----------------10
-------------------------------18"
+[node name="Clue_10" type="Label3D" parent="Room One Codes"]
+transform = Transform3D(-0.999981, 0.00349074, -0.00523592, -0.00523592, 9.13872e-06, 0.999987, 0.00349074, 0.999994, 9.13872e-06, 3.15017, -0.466401, 5.84172)
+text = "10
+"
 
-[node name="Room two code" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.47922, 0.967518, 12.7715)
-text = "-------------16-------------
-21-------------------------
----------------------------19"
+[node name="Clue_18" type="Label3D" parent="Room One Codes"]
+transform = Transform3D(-0.999982, 0.00349074, -0.00523592, -0.00523592, 9.13872e-06, 0.999987, 0.00349074, 0.999995, 9.13872e-06, 3.63682, -0.466401, 5.51948)
+text = "18"
 
-[node name="Label3D" type="Label3D" parent="Room two code"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.80119, 0, 0.00648212)
-text = "24------------------------
-------------------8-----
-------------25----------"
+[node name="Room Three Codes" type="Node3D" parent="."]
 
-[node name="Label3D2" type="Label3D" parent="Room two code"]
-transform = Transform3D(-1, -8.74228e-08, -3.82137e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, 2.445, -0.450098, 6.10872)
-text = "-------------------------23
----------5-----------------"
+[node name="Clue_13" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(-1.77636e-15, -1, 3.88235e-23, -4.37114e-08, 6.31089e-30, 1, -1, 3.39406e-30, -4.37114e-08, 1.95625, 1.50579, 35.6335)
+text = "13"
 
-[node name="Room three code" type="Label3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.24296, 0.877553, 32.402)
-text = "----------------13----------
-19------------------------
--------------------------5"
+[node name="Clue_5_2" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.24296, 0.803584, 32.393)
+text = "5"
 
-[node name="Label3D" type="Label3D" parent="Room three code"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.21074)
-text = "24-----------------
--------------------15
---------2-----------
-5-------------------"
+[node name="Clue_19" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(1.19209e-07, 0, 1, 0, 1, 0, -1, 0, 1.19209e-07, 3.24296, 1.04076, 31.2891)
+text = "19"
 
-[node name="Label3D2" type="Label3D" parent="Room three code"]
-transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 20.0539, -0.3485, 3.11038)
+[node name="Clue_24" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(1, 4.37114e-08, -2.78181e-08, -4.37114e-08, 1, -3.55271e-15, 2.78181e-08, 3.82137e-15, 1, -2.04786, 1.17777, 37.4637)
+text = "24"
+
+[node name="Clue_15" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(3.55271e-15, 1, -4.37114e-08, 5.96046e-08, -4.37114e-08, -1, -1, 0, -5.96046e-08, -2.22696, 1.46597, 30.058)
+text = "15"
+
+[node name="Clue_2" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(8.74228e-08, -1, 4.37114e-08, -1.49012e-07, 4.37114e-08, 1, -1, -8.74228e-08, -1.49012e-07, -2.46619, 1.46597, 30.3419)
+text = "2"
+
+[node name="Clue_5" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(-8.76352e-15, -1, 1.31134e-07, -5.96046e-08, 1.31134e-07, 1, -1, 0, -5.96046e-08, -2.66897, 1.46597, 30.9418)
+text = "5"
+
+[node name="Label3D2" type="Label3D" parent="Room Three Codes"]
+transform = Transform3D(-1, -8.74228e-08, -3.82138e-15, 0, -4.37114e-08, 1, -8.74228e-08, 1, 4.37114e-08, 0.132579, 0.529053, 52.4559)
 text = "You made it! 
 Good job!"
+
+[node name="ChickenWiseau" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_203el")
+volume_db = -16.0

@@ -39,4 +39,5 @@ func remove_wall(level):
 	if level == 2:
 		print(level)
 		$Environment/DisappearingWall3.position.y = 2.104
+		$ChickenWiseau.play()
 	
